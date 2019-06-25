@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1876213F22C25E47004130CC /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1876213E22C25E47004130CC /* PhotoTableViewController.swift */; };
+		18EC73F922C25D84002D230F /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EC73F822C25D84002D230F /* AddPhotoViewController.swift */; };
 		18EEAFF422C1402300B852BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEAFF322C1402300B852BB /* AppDelegate.swift */; };
 		18EEAFF922C1402300B852BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EEAFF722C1402300B852BB /* Main.storyboard */; };
 		18EEAFFC22C1402300B852BB /* viewFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18EEAFFA22C1402300B852BB /* viewFinder.xcdatamodeld */; };
@@ -14,7 +16,6 @@
 		18EEB00122C1402600B852BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18EEAFFF22C1402600B852BB /* LaunchScreen.storyboard */; };
 		18EEB00C22C1402600B852BB /* viewFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEB00B22C1402600B852BB /* viewFinderTests.swift */; };
 		18EEB01722C1402600B852BB /* viewFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEB01622C1402600B852BB /* viewFinderUITests.swift */; };
-		18EEB02522C14BF800B852BB /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEB02422C14BF800B852BB /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1876213E22C25E47004130CC /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		18EC73F822C25D84002D230F /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddPhotoViewController.swift; path = ../../toDoList/toDoList/AddPhotoViewController.swift; sourceTree = "<group>"; };
 		18EEAFF022C1402300B852BB /* viewFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viewFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EEAFF322C1402300B852BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18EEAFF822C1402300B852BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		18EEB01222C1402600B852BB /* viewFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = viewFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EEB01622C1402600B852BB /* viewFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewFinderUITests.swift; sourceTree = "<group>"; };
 		18EEB01822C1402600B852BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18EEB02422C14BF800B852BB /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				18EEAFF322C1402300B852BB /* AppDelegate.swift */,
+				18EC73F822C25D84002D230F /* AddPhotoViewController.swift */,
 				18EEAFF722C1402300B852BB /* Main.storyboard */,
+				1876213E22C25E47004130CC /* PhotoTableViewController.swift */,
 				18EEAFFD22C1402600B852BB /* Assets.xcassets */,
 				18EEAFFF22C1402600B852BB /* LaunchScreen.storyboard */,
 				18EEB00222C1402600B852BB /* Info.plist */,
 				18EEAFFA22C1402300B852BB /* viewFinder.xcdatamodeld */,
-				18EEB02422C14BF800B852BB /* AddPhotoViewController.swift */,
 			);
 			path = viewFinder;
 			sourceTree = "<group>";
@@ -260,7 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18EEAFFC22C1402300B852BB /* viewFinder.xcdatamodeld in Sources */,
-				18EEB02522C14BF800B852BB /* AddPhotoViewController.swift in Sources */,
+				18EC73F922C25D84002D230F /* AddPhotoViewController.swift in Sources */,
+				1876213F22C25E47004130CC /* PhotoTableViewController.swift in Sources */,
 				18EEAFF422C1402300B852BB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6JA627VW7;
 				INFOPLIST_FILE = viewFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6JA627VW7;
 				INFOPLIST_FILE = viewFinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

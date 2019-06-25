@@ -13,7 +13,7 @@
         <!--View Finder-->
         <scene sceneID="dZY-vv-7FN">
             <objects>
-                <tableViewController id="pSp-xL-va8" sceneMemberID="viewController">
+                <tableViewController id="pSp-xL-va8" customClass="PhotoTableViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9LH-iV-Qse">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,6 +101,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveTapped:" destination="7bQ-0O-gFn" eventType="touchUpInside" id="UCz-7i-bxQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,6 +111,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="Gyv-1E-eAk"/>
                     <connections>
+                        <outlet property="captionText" destination="tnD-go-yak" id="ty9-qQ-2PH"/>
                         <outlet property="imageView" destination="Vzw-YJ-e5f" id="MdU-s4-8Oc"/>
                     </connections>
                 </viewController>
