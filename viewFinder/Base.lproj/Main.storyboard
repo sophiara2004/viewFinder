@@ -45,6 +45,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="sxL-g6-XZH" kind="show" identifier="moveToDetail" id="COD-p8-n1w"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USx-zt-zXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,6 +121,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4t-uJ-8n4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1666.906474820144" y="78.776978417266193"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="4LU-Yw-Rf8">
+            <objects>
+                <viewController id="sxL-g6-XZH" customClass="PhotoDetailViewController" customModule="viewFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e2g-gm-Fcf">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1g-66-Zd6">
+                                <rect key="frame" x="159" y="198" width="517" height="340"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fcf-ud-W6n"/>
+                    </view>
+                    <connections>
+                        <outlet property="Photos" destination="o1g-66-Zd6" id="Y6P-AC-Hd7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xv8-RK-aje" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655.3956834532376" y="731.65467625899282"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ySA-2R-RHZ">

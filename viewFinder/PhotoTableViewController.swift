@@ -29,7 +29,25 @@ class PhotoTableViewController: UITableViewController {
             }
             
         }
-//    override func viewWillAppear(_ animated: Bool) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+performSegue(withIdentifier: "moveToDetail", sender: photos[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToDetail" {
+          
+            if let photoDetailView = segue.destination as? PhotoDetailViewController {
+                
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
+    //    override func viewWillAppear(_ animated: Bool) {
 //        getPhotos()
 //    }
         // Uncomment the following line to preserve selection between presentations
