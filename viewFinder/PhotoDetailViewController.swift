@@ -18,6 +18,15 @@ class PhotoDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let realPhoto = photo {
+            title = realPhoto.caption
+           
+            if let cellPhotoImageData = realPhoto.imageData {
+                if let cellPhotoImage = UIImage(data: cellPhotoImageData) {
+                    Photos.image = cellPhotoImage
+                }
+            }
+        }
         // Do any additional setup after loading the view.
     }
     

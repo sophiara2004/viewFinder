@@ -38,6 +38,12 @@ performSegue(withIdentifier: "moveToDetail", sender: photos[indexPath.row])
           
             if let photoDetailView = segue.destination as? PhotoDetailViewController {
                 
+                if let photoToSend = sender as?
+        
+            Photos {
+                    photoDetailView.photo = photoToSend
+                }
+                
             }
         }
     }
